@@ -11,7 +11,7 @@ fun calculateDiscount(price : Int) = if (price > 500000) (price * 0.8).toInt() e
 
 fun printReceipt(title : String, finalPrice: Int) {
     val userNote : String? = null
-    val note = userNote?.length ?: "Tidak ada Catatan"
+    val note = userNote ?: "Tidak ada Catatan"
 
     println("Harga akhir Game : $title, adalah Rp$finalPrice")
     println("Notes : $note")
