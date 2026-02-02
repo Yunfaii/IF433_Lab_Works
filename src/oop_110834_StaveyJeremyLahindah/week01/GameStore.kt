@@ -4,4 +4,3 @@ fun main () {
     val gameTitle = "Ultrakill"
     val price = 60000
 }
-
