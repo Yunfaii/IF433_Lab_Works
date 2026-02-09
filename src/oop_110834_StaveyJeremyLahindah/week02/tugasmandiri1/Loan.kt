@@ -1,4 +1,4 @@
-package oop_110834_StaveyJeremyLahindah.week02
+package oop_110834_StaveyJeremyLahindah.week02.tugasmandiri1
 
 class Loan (
     val bookTitle : String,
