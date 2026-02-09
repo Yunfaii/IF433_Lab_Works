@@ -10,6 +10,6 @@ class Student (val name: String, val nim: String, var major: String, var gpa: Do
         }
     }
 
-    constructor(nim: String, name: String) :
-            this(nim, nim, "Non-Matriculated")
+    constructor(name: String, nim: String) :
+            this(name, nim, "Non-Matriculated")
 }
