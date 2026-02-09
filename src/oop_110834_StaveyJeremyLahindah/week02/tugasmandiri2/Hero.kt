@@ -6,15 +6,13 @@ class Hero (
     val baseDamage : Int
 ) {
     fun attack(targetName : String) {
-        println("$name Attacks $targetName!")
+        println("$name attacks $targetName!")
     }
     fun takeDamage(damage : Int){
-        println("$name Takes $damage damage!")
+        println("$name takes $damage damage!")
         hp -= damage
-        if (!isAlive()) {
-            println("$name Has fainted")
-        } else {
-            println("$name has $hp hp left!")
+        if (hp <= 0) {
+            hp = 0
         }
     }
     fun isAlive() : Boolean = hp > 0
