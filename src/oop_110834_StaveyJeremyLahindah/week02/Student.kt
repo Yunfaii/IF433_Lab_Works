@@ -9,4 +9,7 @@ class Student (val name: String, val nim: String, var major: String){
             println("LOG : Objek Student $name berhasil dialokasikan di Memory.")
         }
     }
+
+    constructor(nim: String, name: String) :
+            this(nim, nim, "Non-Matriculated")
 }
