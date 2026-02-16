@@ -1,4 +1,4 @@
-package oop_110834_StaveyJeremyLahindah.week03
+package oop_110834_StaveyJeremyLahindah.week03.tugasmandiri1
 
 class Weapon (val name : String){
     var damage : Int = 0
