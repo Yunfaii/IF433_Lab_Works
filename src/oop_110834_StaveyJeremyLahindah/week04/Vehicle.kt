@@ -1,0 +1,14 @@
+package oop_110834_StaveyJeremyLahindah.week04
+
+open class Vehicle ( val brand : String) {
+    var speed: Int = 0
+
+    open fun accelerate() {
+        speed += 0
+        println("$brand melaju. Kecepatan $speed km/jam")
+    }
+
+    open fun honk() {
+        println ("Honk Honk")
+    }
+}
