@@ -16,4 +16,15 @@ fun main() {
     val ElCar = ElectricCar("Toyota", 4, 90)
     ElCar.accelerate()
     ElCar.openTrunk()
+
+    println("\n--- Employee ---")
+    val Manager = Manager("Rick", 5000000)
+    Manager.work()
+    println("Bonus: Rp ${Manager.calculateBonus()}")
+
+
+    println("\n")
+    val Dev = Developer("Morty", 7000000, "C++")
+    Dev.work()
+    println("Bonus: Rp ${Dev.calculateBonus()}")
 }
