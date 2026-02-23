@@ -1,2 +1,11 @@
 package oop_110834_StaveyJeremyLahindah.week04
 
+open class Employee (val name : String, val baseSalary : Int) {
+    open fun work() {
+        println("$name sedang bekerja.")
+    }
+
+    open fun calculateBonus(): Double {
+        return baseSalary * 0.1
+    }
+}
