@@ -22,4 +22,19 @@ fun main() {
         }
         println("-------------------------------")
     }
+
+    println("=== Math Things===")
+    val helper = MathHelper()
+    val persegi = helper.hitungLuas(3)
+    println("Nilai luas persegi dengan sisi 3cm adalah ${persegi}cm")
+    val persegi_panjang = helper.hitungLuas(3, 5)
+    println("Nilai luas persegi panjang dengan panjang 3cm dan lebar 5cm adalah ${persegi_panjang}cm")
+    val lingkaran = helper.hitungLuas(7.0)
+    println("Nilai luas lingkaran dengan jari-jari 7.0 adalah ${lingkaran}")
+
+
+
+
+
+
 }
