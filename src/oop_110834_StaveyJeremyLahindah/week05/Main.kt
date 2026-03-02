@@ -23,7 +23,7 @@ fun main() {
         println("-------------------------------")
     }
 
-    println("=== Math Things===")
+    println("=== Math Things ===")
     val helper = MathHelper()
     val persegi = helper.hitungLuas(3)
     println("Nilai luas persegi dengan sisi 3cm adalah ${persegi}cm")
@@ -32,9 +32,17 @@ fun main() {
     val lingkaran = helper.hitungLuas(7.0)
     println("Nilai luas lingkaran dengan jari-jari 7.0 adalah ${lingkaran}")
 
+    println("=== Money Things ===")
+    val EWallet = EWallet("Rick", 50000.0)
+    val CreditCard = CreditCard("Rick", 100000.0)
 
+    val PaymentMethods = listOf<PaymentMethod>(EWallet, CreditCard)
 
-
-
-
+    for (PaymentMethods in PaymentMethods) {
+        PaymentMethods.processPayment(75000.0)
+        if (PaymentMethods is EWallet) {
+            PaymentMethods.topUp(50000.0)
+        }
+        PaymentMethods.processPayment(75000.0)
+    }
 }

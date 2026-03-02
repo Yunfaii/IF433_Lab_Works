@@ -5,7 +5,7 @@ class EWallet (accountName : String, var balance : Double) : PaymentMethod(accou
     override fun processPayment(amount : Double) {
         if (balance > amount){
             balance -= amount
-            println("Balance has been deducted by ${amount}Rp current balance is ${balance}Rp")
+            println("Balance has been deducted by Rp${amount} current balance is Rp${balance}")
         } else {
             println("Balance is not enough!")
         }
@@ -13,6 +13,6 @@ class EWallet (accountName : String, var balance : Double) : PaymentMethod(accou
 
     fun topUp (amount : Double){
         balance += amount
-        println("Balance has been added by ${amount} current balance is now ${balance}Rp")
+        println("Balance has been added by Rp${amount} current balance is now Rp${balance}")
     }
 }
