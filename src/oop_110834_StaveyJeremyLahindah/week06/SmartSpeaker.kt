@@ -7,7 +7,6 @@ class SmartSpeaker : SmartDevice, Switchable{
     override fun turnOff()  {
         println ("$Name is turning Off")
     }
-
     override fun turnOn() {
         println ("$Name is turning On")
     }
