@@ -1,7 +1,6 @@
 package oop_110834_StaveyJeremyLahindah.week06
 
 interface Clickable {
-    val name : String = "Secret Button"
-
+    val name : String
     fun click()
 }
