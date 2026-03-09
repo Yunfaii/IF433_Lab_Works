@@ -1,8 +1,8 @@
 package oop_110834_StaveyJeremyLahindah.week06
 
 interface SmartDevice{
-    abstract val id : String
-    abstract val name : String
+    abstract val Id : String
+    abstract val Name : String
 }
 
 interface Switchable{
