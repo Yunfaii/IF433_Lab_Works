@@ -18,5 +18,7 @@ fun main () {
     processCheckout(pay2, 150000.0)
 
     println("\n=== TUGAS ===")
-    val lamp = SmartLamp("Ruang Tamu")
+    val lamp = SmartLamp("123", "Ruang Tamu")
+    val speaker = SmartSpeaker ("231", "Google Nest Dapur")
+    val cctv = SmartCCTV ("321", "Ezviz Garasi")
 }
