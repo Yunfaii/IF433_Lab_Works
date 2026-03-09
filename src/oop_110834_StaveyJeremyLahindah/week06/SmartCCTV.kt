@@ -1,8 +1,9 @@
 package oop_110834_StaveyJeremyLahindah.week06
 
-class SmartCCTV: SmartDevice, Switchable, Recordable{
-    override val Id = "123"
-    override val Name = "SmartCCTV"
+class SmartCCTV(
+    override val Id : String,
+    override val Name :String
+): SmartDevice, Switchable, Recordable{
 
     override fun turnOff()  {
         stopRecord()

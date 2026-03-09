@@ -1,8 +1,9 @@
 package oop_110834_StaveyJeremyLahindah.week06
 
-class SmartSpeaker : SmartDevice, Switchable{
-    override val Id : String = "321321"
-    override val Name = "SmartSpeaker"
+class SmartSpeaker(
+    override val Id : String,
+    override val Name :String
+) : SmartDevice, Switchable{
 
     override fun turnOff()  {
         println ("$Name is turning Off")

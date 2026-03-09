@@ -16,4 +16,7 @@ fun main () {
     println("\n=== Testing Checkout ===")
     processCheckout(pay1, 50000.0)
     processCheckout(pay2, 150000.0)
+
+    println("\n=== TUGAS ===")
+    val lamp = SmartLamp("Ruang Tamu")
 }
