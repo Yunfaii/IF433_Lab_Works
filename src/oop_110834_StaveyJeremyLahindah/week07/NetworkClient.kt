@@ -7,7 +7,6 @@ class NetworkClient private constructor (val url: String) {
         fun createClient() : NetworkClient {
             println("Membangun NetworkClient dengan baseURL : $BASE_URL")
             return NetworkClient(BASE_URL)
-            // aa
         }
     }
 
