@@ -8,5 +8,8 @@ enum class ItemRarity (val dropChance : Int) {
     LEGENDARY (5)
 }
 
+data class GameItem (val name : String, val damage: Int, val rarity: ItemRarity)
+
+
 
 
