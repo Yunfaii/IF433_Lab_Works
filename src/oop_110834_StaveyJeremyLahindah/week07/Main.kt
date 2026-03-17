@@ -45,5 +45,14 @@ fun main (){
     println("\nThe Legendary Drop Chance is ${ItemRarity.LEGENDARY.dropChance}")
     val starterWeapon = Weapon.forgeStarterSword()
     println("\nPlayer Telah Membentuk Senjata!\nName: ${starterWeapon.item.name}, Damage : ${starterWeapon.item.damage}\nRarity : ${starterWeapon.item.rarity}, Durability : ${starterWeapon.durability}")
-}
 
+    println("\nPlayer pergi ke blacksmith pandai besi untuk upgrade ${starterWeapon.item.name} agar damage 25")
+    val upgradedStarterWeapon = starterWeapon.item.copy(damage=25)
+    println("Player telah upgrade ${upgradedStarterWeapon.name} menjadi damage : ${upgradedStarterWeapon.damage} ")
+
+    println("\n=== Events Check ===")
+    processEvent(SafeZone)
+    processEvent(MonsterEncounter("Goblin Nakal"))
+    processEvent(LootDropped(upgradedStarterWeapon))
+    processEvent(GameOver("Terkena jebakan racun"))
+}
