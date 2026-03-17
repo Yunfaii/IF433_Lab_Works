@@ -9,6 +9,5 @@ class Weapon private constructor(val item: GameItem, val durability: Int){
         fun forgeEpicSword() : Weapon{
             return Weapon(GameItem("Jovan's Halberd", 100, ItemRarity.EPIC), 200)
         }
-
     }
 }

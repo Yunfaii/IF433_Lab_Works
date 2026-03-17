@@ -42,6 +42,8 @@ fun main (){
     gameMaster.startGame()
     gameMaster.startGame()
 
-
+    println("\nThe Legendary Drop Chance is ${ItemRarity.LEGENDARY.dropChance}")
+    val starterWeapon = Weapon.forgeStarterSword()
+    println("\nPlayer Telah Membentuk Senjata!\nName: ${starterWeapon.item.name}, Damage : ${starterWeapon.item.damage}\nRarity : ${starterWeapon.item.rarity}, Durability : ${starterWeapon.durability}")
 }
 
