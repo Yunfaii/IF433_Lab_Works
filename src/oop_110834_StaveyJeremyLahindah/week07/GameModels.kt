@@ -1,10 +1,10 @@
 package oop_110834_StaveyJeremyLahindah.week07
 
 enum class ItemRarity (val dropChance : Int) {
-    COMMON (45),
-    UNCOMMON(30),
+    COMMON (40),
+    UNCOMMON(20),
     RARE (15),
-    EPIC (5),
+    EPIC (10),
     LEGENDARY (5)
 }
 
