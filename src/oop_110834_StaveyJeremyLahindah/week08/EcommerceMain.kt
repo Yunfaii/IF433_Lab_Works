@@ -15,10 +15,16 @@ fun main() {
             val product = parse.parseProduct(raw)
 
             product?.let {
+                when (it) {
+                    is Electronic -> println("Processing : ${it.name} (Warranty : ${it.warrantyMonths} Months)\n")
+                    is Clothing -> println("Processing: ${it.name} (Size ${it.size})\n")
+                }
                 parse.checkout(it)
             }
         } catch (e: IllegalArgumentException) {
             println("[Error] Data Corrupted : ${e.message}")
         }
     }
+
+    // Sudah Dijalankan
 }
