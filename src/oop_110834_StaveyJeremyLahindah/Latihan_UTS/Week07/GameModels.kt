@@ -1,4 +1,4 @@
-package oop_110834_StaveyJeremyLahindah.UTS.Week07
+package oop_110834_StaveyJeremyLahindah.Latihan_UTS.Week07
 
 enum class ItemRarity (val dropChance : Int) {
     COMMON(60),

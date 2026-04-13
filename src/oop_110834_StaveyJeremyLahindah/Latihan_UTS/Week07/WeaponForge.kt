@@ -1,4 +1,4 @@
-package oop_110834_StaveyJeremyLahindah.UTS.Week07
+package oop_110834_StaveyJeremyLahindah.Latihan_UTS.Week07
 
 class Weapon private constructor(val item: GameItem, val durability: Int){
     companion object {

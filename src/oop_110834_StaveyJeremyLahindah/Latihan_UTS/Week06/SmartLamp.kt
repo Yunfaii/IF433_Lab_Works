@@ -1,4 +1,4 @@
-package oop_110834_StaveyJeremyLahindah.UTS.Week06
+package oop_110834_StaveyJeremyLahindah.Latihan_UTS.Week06
 
 class SmartLamp (
     override val id : String,
