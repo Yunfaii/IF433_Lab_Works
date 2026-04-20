@@ -28,5 +28,9 @@ fun main() {
         .map { it.pair }
         .toSet()
 
+    println("=== CRYPTO TRADING DASHBOARD ===")
 
+    topPerformersString.forEach { log ->
+        println(log)
+    }
 }
