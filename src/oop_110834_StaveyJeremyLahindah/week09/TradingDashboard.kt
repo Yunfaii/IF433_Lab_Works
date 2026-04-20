@@ -33,4 +33,10 @@ fun main() {
     topPerformersString.forEach { log ->
         println(log)
     }
+
+    worstPerformersString.forEach { log ->
+        println(log)
+    }
+
+    println("\nPairs that have been traded : $uniquePairs")
 }
