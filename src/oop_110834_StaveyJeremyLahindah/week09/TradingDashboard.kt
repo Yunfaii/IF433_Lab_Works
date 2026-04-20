@@ -39,4 +39,5 @@ fun main() {
     }
 
     println("\nPairs that have been traded : $uniquePairs")
+    //Code sudah dijalankan / Code has been runned (runned?/ranned? gtau ko)
 }
