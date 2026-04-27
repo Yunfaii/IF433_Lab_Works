@@ -26,4 +26,8 @@ fun main() {
     txRepo.getAll().forEach { tx ->
         println("ID Transaksi: ${tx.id} | Jumlah: ${tx.amount}")
     }
+
+    //Sudah di run dan menggunakkan functions
+    val searchTx = txRepo.findByName("002")
+    println("\nHasil Pencarian Transaksi (002): $searchTx")
 }
