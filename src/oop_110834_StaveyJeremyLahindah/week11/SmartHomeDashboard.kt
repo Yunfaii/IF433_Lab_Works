@@ -27,4 +27,8 @@ fun main() {
     searchResult?.let {
         println(it.diagnose())
     }
+
+    with(homeDevices) {
+        println("Dashboard Summary - Total Devices: ${this.size}")
+    }
 }
