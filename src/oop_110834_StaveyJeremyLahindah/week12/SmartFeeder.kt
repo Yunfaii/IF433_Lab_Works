@@ -15,6 +15,7 @@ fun dispenseKibble(requestedGram: Int, availableGram: Int, isJammed: Boolean): I
 fun main() {
     var currentKibbleStock = 50
 
+    println("=== JADWAL MAKAN PAGI ===")
     try {
         currentKibbleStock = dispenseKibble(80, currentKibbleStock, false)
     } catch (e: DispenserJamException) {
@@ -31,6 +32,7 @@ fun main() {
         dispenseKibble(30, 1000, false)
     }
 
+    println("\n=== JADWAL MAKAN SORE ===")
     runCatching {
         dispenseKibble(30, 1000, false)
     }.onSuccess { newStock ->
@@ -40,6 +42,4 @@ fun main() {
         println("Peringatan ke Pemilik: ${error.message}")
         println("(Opsional: Berikan chicken jerky secara manual)")
     }
-
-
 }
