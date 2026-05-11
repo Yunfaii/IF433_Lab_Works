@@ -17,3 +17,14 @@ class BankAccount(var balance: Double) {
         println("Withdrawal successful. Remaining balance: $balance")
     }
 }
+
+fun main() {
+    println("=== TEST TRY AS EXPRESSION ===")
+    val inputString = "123A"
+    val result: Int = try {
+        Integer.parseInt(inputString)
+    } catch (e: NumberFormatException) {
+        -1
+    }
+    println("Hasil parsing: $result")
+}
