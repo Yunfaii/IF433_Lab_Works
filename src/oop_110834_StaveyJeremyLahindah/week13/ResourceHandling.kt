@@ -10,5 +10,5 @@ fun main() {
     writer.println("Log 2: Menulis data pengguna....")
 
     writer.close()
-    println("Proses penulisan unsafe selesai")
+    println("Proses penulisan unsafe selesai") // Lupa checkpoint 3
 }
